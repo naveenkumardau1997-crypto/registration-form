@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <h1>Registration Form</h1>
+        <p>Create your account</p>
+
+        <!-- Registration Form -->
+        <form id="registrationForm">
+
+            <!-- Name Field -->
+            <label for="name">Name</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+            <span class="error" id="nameError"></span>
+
+
+            <!-- Email Field -->
+            <label for="email">Email</label>
+
+            <input
+                type="text"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <span class="error" id="emailError"></span>
+
+
+            <!-- Password Field -->
+            <label for="password">Password</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+            >
+
+            <span class="error" id="passwordError"></span>
+
+
+            <!-- Submit Button -->
+            <button
+                type="submit"
+                id="submitButton"
+                disabled
+            >
+                Register
+            </button>
+
+
+            <!-- Success Message -->
+            <p id="successMessage"></p>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+

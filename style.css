@@ -1,0 +1,147 @@
+
+/* Step 1: Basic Page Design */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+/* Step 2: Registration Form Container */
+
+.container {
+    background-color: white;
+    width: 320px;
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Step 3: Heading */
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+}
+
+.container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* Step 4: Labels */
+
+label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 7px;
+
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Step 5: Input Fields */
+
+input {
+    width: 100%;
+    padding: 11px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+/* Input Focus Effect */
+
+input:focus {
+    border-color: #667eea;
+}
+
+
+/* Step 6: Error Messages */
+
+.error {
+    display: block;
+
+    color: red;
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+
+/* Step 7: Register Button */
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    margin-top: 22px;
+
+    background-color: #667eea;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+
+/* Button Hover Effect */
+
+button:hover:not(:disabled) {
+    background-color: #4c5ed7;
+}
+
+
+/* Step 8: Disabled Button */
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+
+/* Step 9: Success Message */
+
+#successMessage {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* Step 10: Mobile Responsive Design */
+
+@media (max-width: 450px) {
+
+    .container {
+        width: auto;
+        max-width: 320px;
+        margin: 15px;
+    }
+
+}
+
